@@ -6,7 +6,7 @@ export default class SearchResult extends Component {
     return <div>
       {
         items.filter(item => item.toLowerCase().includes(keyword.toLowerCase()))
-          .map(i => <div>{i}</div>)
+          .map(i => <div key={i}>{i}</div>)
       }
     </div>;
   }

@@ -1,7 +1,7 @@
 'use strict';
 import SearchForm from '../components/search-form.jsx';
 import {connect} from 'react-redux';
-import actions from '../actions/index';
+import * as actions from '../actions/index';
 
 function mapStateToProps(state) {
   return {
@@ -11,7 +11,7 @@ function mapStateToProps(state) {
 
 function mapDispatchToProps(dispatch) {
   return {
-    actions: (keyword) => dispatch(actions.search(keyword))
+    onSearch: (keyword) => dispatch(actions.search(keyword))
   }
 }
 

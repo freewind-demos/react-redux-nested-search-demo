@@ -1,8 +1,8 @@
 'use strict';
-import {combineReducers} from 'redux';
 import initStore from '../store/init-store';
+import actionTypes from '../actions/types';
 
-function keyword(state = initStore, action) {
+export default function (state = initStore, action) {
   switch (action.type) {
     case 'SEARCH':
       return Object.assign({}, state, {
@@ -11,8 +11,4 @@ function keyword(state = initStore, action) {
     default:
       return state;
   }
-}
-
-const rootReducer = combineReducers({keyword});
-
-export default rootReducer;
+};

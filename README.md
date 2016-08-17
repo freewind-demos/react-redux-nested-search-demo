@@ -1,7 +1,7 @@
-React Hello World Demo
-======================
+React Redux Nested Search Demo
+==============================
 
-Just say hello from react.
+Use redux to make nested search demo easier.
 
 ```
 npm install
