@@ -14,7 +14,9 @@ export default class App extends Component {
     return <div>
       <SearchPanel1 onSearch={(keyword) => this.setState({keyword: keyword})}/>
       <hr />
-      <SearchResult keyword={this.state.keyword}/>
+      <SearchResult keyword={this.state.keyword} items={
+        ['JavaScript', 'Node', 'React', 'Redux', 'Bootstrap', 'Webpack', 'Babel']
+      }/>
     </div>;
   }
 
