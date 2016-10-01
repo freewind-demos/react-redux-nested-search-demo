@@ -7,8 +7,10 @@ export default class SearchForm extends Component {
   }
 
   render() {
+    const {keyword} = this.props;
     return <form>
       <input type="text" placeholder="keyword" autoFocus="true"
+             defaultValue={keyword}
              onChange={this._onKeywordChange.bind(this)}/>
     </form>
   }

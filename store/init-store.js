@@ -1,5 +1,5 @@
 const initStore = {
-  keyword: '',
+  keyword: 'r',
   items: ['JavaScript', 'Node', 'React', 'Redux', 'Bootstrap', 'Webpack', 'Babel']
 };
 
